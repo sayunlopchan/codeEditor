@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.header {
+  @apply text-sm;
+}
+.headerNav {
+  @apply bg-yellow-50 h-[35px] border-b-2 flex justify-between items-center px-2;
+}
+
+.logo {
+  @apply hover:cursor-pointer h-8 py-1;
+}
+
+.nav-btn-container {
+  @apply flex text-sm;
+  @layer md:text-md;
+}
+
+.nav-btn {
+  @apply px-3 py-1 border border-gray-300;
+}
+.nav-btn:hover {
+  @apply cursor-pointer bg-white;
+}
+
+.nav-btn:first-child {
+  @apply font-bold rounded-tl-lg rounded-bl-lg;
+}
+
+.nav-btn:last-child {
+  @apply rounded-tr-lg rounded-br-lg;
+}
+
+.nav-end-box {
+  @apply flex items-center;
+}
+
+.run-btn {
+  @apply bg-gray-400 text-white px-4 py-1 rounded transition-[0.3s];
+}
+.run-btn:hover {
+  @apply bg-gray-500;
+}
+
+.home-logo {
+  @apply mt-16;
+}
+
+.login-register {
+  @apply relative hidden lg:flex bg-yellow-400 p-1 ml-4;
+}
+
+.login-register:hover {
+  @apply cursor-pointer;
+}
+
+/* code container */
+
+.code-container {
+  @apply flex flex-wrap w-full;
+}
+
+.code-container h1 {
+  @apply text-blue-500 font-semibold border inline-block px-2 m-1;
+}
+
+/* drop box styling */
+.drop-box {
+  @apply absolute z-10 w-[350px] bg-white right-0 top-[33px] border-2;
+}
+.box-content {
+  @apply flex flex-col items-center justify-center mt-8 p-2;
+}
+.box-item {
+  @apply flex gap-2 border-2 px-5 py-2 rounded-sm shadow-md transition duration-300;
+}
+.box-item:hover {
+  @apply bg-gray-400;
+}
+
+/* main Section */
+
+.main {
+  @apply flex flex-col justify-center items-center;
+}
